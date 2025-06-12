@@ -1,0 +1,12 @@
+for(int i=0; i<len; i++){
+            if(digits[i]<10){
+                if(i==len-1){
+                num[i]=1+digits[i];
+                }else{
+                    num[i]=digits[i];
+                }
+            }else if(digits[i]>10){
+                num[i]=0;
+                num[0]=1;
+            }
+        }

@@ -1,0 +1,23 @@
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int haylen = haystack.length();
+        int neelen = needle.length();
+
+        if(haylen < neelen){
+            return -1;
+        }
+
+        for(int i=0; i < haylen-neelen; i++){ // i<6
+            int j=0;
+
+            while(j<neelen && haystack.charAt(i+j)==needle.charAt(j)){ 
+                j++;
+            }
+
+            if(j == neelen){
+                return i;
+            }
+        }
+        return -1;
+    }
+}
