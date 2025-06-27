@@ -10,6 +10,6 @@ public class Ques709 {
                 arr[i]+=32;
             }
         }
-        System.out.println();
+        
     }
 }
